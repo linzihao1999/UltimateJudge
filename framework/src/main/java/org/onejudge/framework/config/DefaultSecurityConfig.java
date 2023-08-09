@@ -1,4 +1,4 @@
-package org.onejudge.services.config;
+package org.onejudge.framework.config;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.ApplicationEventPublisher;
