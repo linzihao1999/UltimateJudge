@@ -12,7 +12,7 @@ This is an Online Judge project. The main goal is to create simple, easy to expa
 ---
 
 ## Architecture
-
+![](./doc/img/architecture.png)
 ---
 ### OneJudge Service
 ### UI
