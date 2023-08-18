@@ -12,6 +12,5 @@ add_executable(executor
         src/Handler.cpp
         src/Handler.h
         src/Connection.h
-        src/ReactorStatus.h
-        src/AcceptorStatus.h
+        src/Status.h
 )

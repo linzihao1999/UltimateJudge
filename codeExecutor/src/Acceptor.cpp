@@ -8,8 +8,8 @@ Connection Acceptor::waitAndAcceptConnection(int listenSocket) {
     Connection connection;
     sockaddr_in clientAddr{};
     socklen_t clientAddrLen = sizeof(clientAddr);
-    connection.connectionSocket = accept(listenSocket, (struct sockaddr *) &clientAddr, &clientAddrLen);
-    if (connection.connectionSocket == -1) {
+    connection.fd = accept(listenSocket, (struct sockaddr *) &clientAddr, &clientAddrLen);
+    if (connection.fd == -1) {
         printf("Error accepting connection\n");
         close(listenSocket);
         connection.status = AcceptorStatus::ERROR;

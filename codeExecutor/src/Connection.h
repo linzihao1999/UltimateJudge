@@ -2,14 +2,14 @@
 #define EXECUTOR_CONNECTION_H
 
 #include "Acceptor.h"
-#include "AcceptorStatus.h"
+#include "Status.h"
 
 class Connection {
 public:
-    explicit Connection(int connectionSocket = 0, AcceptorStatus status = AcceptorStatus::UNKNOWN) :
-            connectionSocket(connectionSocket), status(status) {}
+    explicit Connection(int fd = 0, AcceptorStatus status = AcceptorStatus::UNKNOWN) :
+            fd(fd), status(status) {}
 
-    int connectionSocket;
+    int fd;
     AcceptorStatus status;
 };
 
