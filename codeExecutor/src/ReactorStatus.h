@@ -1,0 +1,9 @@
+#ifndef EXECUTOR_REACTORSTATUS_H
+#define EXECUTOR_REACTORSTATUS_H
+
+enum ReactorStatus {
+    OK,
+    ERROR
+};
+
+#endif //EXECUTOR_REACTORSTATUS_H
