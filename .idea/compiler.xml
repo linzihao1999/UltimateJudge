@@ -7,13 +7,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="framework" />
+        <module name="code-executor" />
+        <module name="core" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="codeExecutor" target="17" />
+      <module name="services" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="framework" options="-parameters" />
+      <module name="code-executor" options="-parameters" />
+      <module name="core" options="-parameters" />
+      <module name="framework" options="" />
+      <module name="services" options="-parameters" />
     </option>
   </component>
 </project>
