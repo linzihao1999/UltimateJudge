@@ -1,4 +1,4 @@
-package org.ultimatejudge.core.config;
+package org.ultimatejudge.executor.config;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.ApplicationEventPublisher;
