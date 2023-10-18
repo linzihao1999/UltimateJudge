@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.ultimatejudge.executor.config.AppConfig;
+import org.ultimatejudge.executor.constant.Status;
 import org.ultimatejudge.executor.service.DockerService;
 
 import java.nio.file.Paths;
@@ -39,6 +40,6 @@ class CodeExecutorApplicationTests {
 
     @Test
     void test2() {
-        System.out.println(Paths.get("./hi", "hello").toAbsolutePath());
+        System.out.println(Status.SUCCEED.name());
     }
 }

@@ -5,6 +5,7 @@ import com.github.dockerjava.api.model.Info;
 import com.github.dockerjava.transport.DockerHttpClient;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
+import org.ultimatejudge.executor.container.CodeJudgeContainer;
 
 import java.io.*;
 
@@ -13,10 +14,12 @@ import java.io.*;
 public class DockerService {
     private final DockerHttpClient httpClient;
     private final ObjectMapper objectMapper;
+    private final CodeJudgeContainer container;
 
-    public DockerService(DockerHttpClient httpClient, ObjectMapper objectMapper) {
+    public DockerService(DockerHttpClient httpClient, ObjectMapper objectMapper, CodeJudgeContainer container) {
         this.httpClient = httpClient;
         this.objectMapper = objectMapper;
+        this.container = container;
     }
 
     public Info getDockerInfo() {
@@ -57,5 +60,13 @@ public class DockerService {
         } catch (Exception e) {
             log.error(e);
         }
+    }
+
+    public void waitJudgeFinish(String codeId) {
+    }
+
+    public void commitCodeJudgeJob(String codeId, String dataId) {
+        container.push(codeId, dataId);
+
     }
 }

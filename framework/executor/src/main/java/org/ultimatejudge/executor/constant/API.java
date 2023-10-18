@@ -16,5 +16,6 @@ public class API {
 
     public static final String CODE_UPLOAD = Layout.CODE + "/upload";
 
+    public static final String GET_JUDGE_RESULT = Layout.CODE + "/result";
     public static final String DOCKER_INFO = Layout.DOCKER + "/info";
 }

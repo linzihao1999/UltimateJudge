@@ -12,5 +12,5 @@ import java.io.Serializable;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class CodeResponse implements Serializable {
     @JsonProperty("status")
-    public final String status;
+    private final String status;
 }

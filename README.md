@@ -2,11 +2,12 @@
 
 ## Description
 
-This is an Online Judge project. The main goal is to create simple, easy to expand, and highly available Online Judge.
+This is an experiment Online Judge project. The main goal is to create simple, easy to expand, and highly available Online Judge.
 
-### Framework
+### Server
 
-- The framework built by spring-boot.
+- The Server built by spring-boot. There are two parts, Core and Executor.
+- Core Server is 
 
 ### Website
 
